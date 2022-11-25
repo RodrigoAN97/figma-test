@@ -1,0 +1,28 @@
+:host {
+  background: #232536;
+  height: 80px;
+  width: calc(100% - 120px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px;
+
+  .links {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 26px;
+  }
+
+  button {
+    width: 179px;
+    height: 56px;
+    background-color: #ffffff;
+    border: none;
+  }
+
+  p {
+    color: #ffffff;
+  }
+}
