@@ -165,10 +165,13 @@
       }
     }
     #special-post {
+      background-image: url("../../../assets/special-post.svg");
+      height: 705px;
+      max-width: 1280px;
       position: relative;
       #post-content {
         position: absolute;
-        right: 370px;
+        right: 0;
         bottom: 0;
         background: #ffffff;
         padding: 60px;
