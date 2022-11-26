@@ -1,0 +1,67 @@
+:host {
+  background: #232536;
+  height: 560px;
+  width: calc(100% - 120px);
+  padding: 0 60px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  #top {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    #links {
+      display: grid;
+      grid-template-columns: auto auto auto auto auto;
+      grid-gap: 26px;
+      p {
+        color: #ffffff;
+      }
+    }
+  }
+  #cta {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+    background-color: #4c4c4c;
+    h2 {
+      color: #ffffff;
+      max-width: 600px;
+    }
+    .action {
+      margin: auto 0;
+      input {
+        background: inherit;
+        border: 1px solid #6d6e76;
+        width: 273px;
+        height: 6px;
+        padding: 25px;
+        margin: auto 24px auto 0;
+      }
+      ::placeholder {
+        color: #6d6e76;
+        font-size: 16px;
+        line-height: 28px;
+      }
+
+      button {
+        background-color: #ffd050;
+        margin: auto 0;
+      }
+    }
+  }
+  #info {
+    display: flex;
+    justify-content: space-between;
+    #contact-info {
+      color: #ffffff;
+      opacity: 0.7;
+    }
+    #social-wrapper {
+      margin: auto 0;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      grid-gap: 20px;
+    }
+  }
+}

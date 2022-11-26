@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 .display {
   font-family: "Sen", sans-serif;
   font-style: normal;
@@ -108,4 +112,14 @@ h6 {
 
 .medium-grey {
   background-color: #6d6e76;
+}
+
+button {
+  width: 179px;
+  height: 56px;
+  border: none;
+  font-family: "Sen", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
 }
