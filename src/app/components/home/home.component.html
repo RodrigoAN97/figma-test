@@ -112,4 +112,21 @@
       <button>Discover our story ></button>
     </div>
   </div>
+  <div id="authors-list">
+    <h2>List of Authors</h2>
+    <div id="authors">
+      <div *ngFor="let author of authors" class="author" [id]="author.featured && 'author-feat'">
+        <img alt="pic" [src]="'assets/' + author.picture" />
+        <h3>{{ author.name }}</h3>
+        <p class="body2">{{ author.position }}</p>
+        <div class="social-wrapper">
+          <img alt="facebook" src="assets/facebook.svg" />
+          <img alt="twitter" src="assets/twitter.svg" />
+          <img alt="instagram" src="assets/instagram.svg" />
+          <img alt="linkedin" src="assets/linkedin.svg" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <img id="logo-component" src="assets/logos.svg"/>
 </div>

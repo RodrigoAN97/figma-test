@@ -42,24 +42,50 @@ export class HomeComponent {
       icon: 'business.svg',
       title: 'Business',
       text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
-      featured: false
+      featured: false,
     },
     {
       icon: 'startup.svg',
       title: 'Startup',
       text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
-      featured: true
+      featured: true,
     },
     {
       icon: 'economy.svg',
       title: 'Economy',
       text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
-      featured: false
+      featured: false,
     },
     {
       icon: 'technology.svg',
       title: 'Technology',
       text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
+      featured: false,
+    },
+  ];
+  authors = [
+    {
+      picture: 'floyd-miles.svg',
+      name: 'Floyd Miles',
+      position: 'Content Writer @Company',
+      featured: false
+    },
+    {
+      picture: 'dianne-russell.svg',
+      name: 'Dianne Russell',
+      position: 'Content Writer @Company',
+      featured: true,
+    },
+    {
+      picture: 'jenny-wilson.svg',
+      name: 'Jenny Wilson',
+      position: 'Content Writer @Company',
+      featured: false
+    },
+    {
+      picture: 'leslie-alexander.svg',
+      name: 'Leslie Alexander',
+      position: 'Content Writer @Company',
       featured: false
     },
   ];

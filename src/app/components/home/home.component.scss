@@ -190,5 +190,33 @@
         }
       }
     }
+    #authors-list {
+      text-align: center;
+      #authors {
+        .author {
+          background: #f4f4f4;
+          padding: 40px;
+        }
+        #author-feat {
+          background: #fbf6ea;
+        }
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      h3 {
+        color: #232536;
+      }
+      p {
+        color: #6d6e76;
+      }
+      .social-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    }
+    #logo-component {
+      margin: auto;
+    }
   }
 }
