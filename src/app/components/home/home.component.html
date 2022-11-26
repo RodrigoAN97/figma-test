@@ -11,65 +11,72 @@
     <button>Read More ></button>
   </div>
 </div>
-<div id="posts">
-  <div id="featured">
-    <h2>Featured Post</h2>
-    <div id="post-wrapper">
-      <img alt="featured-img" [src]="'assets/' + featuredPost.featuredImage" />
-      <p class="label author-date">
-        By
-        <span class="author">{{ featuredPost.author }}</span>
-        | {{ featuredPost.date }}
-      </p>
-      <h3>
+<div id="content">
+  <div id="posts">
+    <div id="featured">
+      <h2>Featured Post</h2>
+      <div id="post-wrapper">
+        <img
+          alt="featured-img"
+          [src]="'assets/' + featuredPost.featuredImage"
+        />
+        <p class="label author-date">
+          By
+          <span class="author">{{ featuredPost.author }}</span>
+          | {{ featuredPost.date }}
+        </p>
+        <h3>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor.
+        </h3>
+        <p class="body1">
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident.
+        </p>
+        <button>Read More ></button>
+      </div>
+    </div>
+    <div id="all-posts">
+      <div id="title">
+        <h2>All Posts</h2>
+        <p class="body1" id="view-all">View All</p>
+      </div>
+      <div
+        *ngFor="let post of posts; let i = index"
+        class="post"
+        [id]="i === 1 && 'new-bg'"
+      >
+        <p class="label author-date">
+          By
+          <span class="author">{{ post.author }}</span>
+          | {{ post.date }}
+        </p>
+        <h4>{{ post.title }}</h4>
+      </div>
+    </div>
+  </div>
+  <div id="about-mission">
+    <span id="yellow-pattern"></span>
+    <span id="purple-pattern"></span>
+    <div id="about-us">
+      <p class="cap1">About us</p>
+      <h2>We are a community of content writers who share their learnings</h2>
+      <p class="body1 inner-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor.
-      </h3>
-      <p class="body1">
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident.
+        tempor incididunt ut labore et dolore magna aliqua.
       </p>
-      <button>Read More ></button>
+      <p class="read-more">Read More ></p>
     </div>
-  </div>
-  <div id="all-posts">
-    <h2>All Posts</h2>
-    <div
-      *ngFor="let post of posts; let i = index"
-      class="post"
-      [id]="i === 1 && 'new-bg'"
-    >
-      <p class="label author-date">
-        By
-        <span class="author">{{ post.author }}</span>
-        | {{ post.date }}
+    <div id="our-mission">
+      <p class="cap1">Our mision</p>
+      <h3>Creating valuable content for creatives all around the world</h3>
+      <p class="body1 inner-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
       </p>
-      <h4>{{ post.title }}</h4>
     </div>
-  </div>
-  <p class="body1" id="view-all">View All</p>
-</div>
-<div id="about-mission">
-  <span id="yellow-pattern"></span>
-  <span id="purple-pattern"></span>
-  <div id="about-us">
-    <p class="cap1">About us</p>
-    <h2>We are a community of content writers who share their learnings</h2>
-    <p class="body1 inner-text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
-    </p>
-    <p class="read-more">Read More ></p>
-  </div>
-  <div id="our-mission">
-    <p class="cap1">Our mision</p>
-    <h3>Creating valuable content for creatives all around the world</h3>
-    <p class="body1 inner-text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat.
-    </p>
   </div>
 </div>

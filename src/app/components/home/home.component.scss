@@ -21,95 +21,108 @@
       }
     }
   }
-  #posts {
-    margin-top: 60px;
-    display: flex;
-    justify-content: space-around;
-    h2,
-    h3,
-    h4 {
-      color: #232536;
-    }
-    .author-date {
-      color: #4c4c4c;
-      .author {
-        color: #592ea9;
+  #content {
+    padding: 60px;
+    #posts {
+      margin: 60px 0;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      h2,
+      h3,
+      h4 {
+        color: #232536;
+      }
+      .author-date {
+        color: #4c4c4c;
+        .author {
+          color: #592ea9;
+        }
+      }
+      #featured {
+        #post-wrapper {
+          width: fit-content;
+          border: 1px solid rgba(109, 110, 118, 0.1);
+          padding: 20px;
+        }
+        h3 {
+          max-width: 700px;
+        }
+        p {
+          color: #6d6e76;
+          max-width: 580px;
+        }
+        button {
+          background: #ffd050;
+        }
+      }
+      #all-posts {
+        #title {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          #view-all {
+            color: #592ea9;
+          }
+        }
+        h4 {
+          max-width: 350px;
+        }
+        #new-bg {
+          background: #fbf6ea;
+        }
+        .post {
+          padding: 10px 20px;
+          width: 500px;
+        }
       }
     }
-    #featured {
-      #post-wrapper {
-        width: fit-content;
-        border: 1px solid rgba(109, 110, 118, 0.1);
-        padding: 20px;
+    #about-mission {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      background-color: #f4f0f8;
+      position: relative;
+      padding: 60px;
+      #yellow-pattern {
+        position: absolute;
+        background: #ffd050;
+        height: 23px;
+        width: 60%;
+        top: -23px;
+        right: 20%;
+      }
+      #purple-pattern {
+        position: absolute;
+        background: #592ea9;
+        height: 23px;
+        width: 20%;
+        top: -23px;
+        right: 0;
+      }
+      p,
+      h2,
+      h3 {
+        color: #232536;
+      }
+      .inner-text {
+        color: #6d6e76;
+        max-width: 500px;
+      }
+      h2 {
+        max-width: 550px;
       }
       h3 {
-        max-width: 700px;
+        max-width: 500px;
       }
-      p {
-        color: #6d6e76;
-        max-width: 580px;
+      .read-more {
+        font-family: "Sen", sans-serif;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: bold;
+        color: #592ea9;
       }
-      button {
-        background: #ffd050;
-      }
-    }
-    #all-posts {
-      h4 {
-        max-width: 350px;
-      }
-      #new-bg {
-        background: #fbf6ea;
-      }
-      .post {
-        padding: 10px 20px;
-      }
-    }
-    #view-all {
-      color: #592ea9;
-    }
-  }
-  #about-mission {
-    display: flex;
-    justify-content: space-around;
-    background-color: #f4f0f8;
-    position: relative;
-    #yellow-pattern {
-      position: absolute;
-      background: #ffd050;
-      height: 23px;
-      width: 60%;
-      top: -23px;
-    }
-    #purple-pattern {
-      position: absolute;
-      background: #592ea9;
-      height: 23px;
-      width: 20%;
-      top: -23px;
-      right: 0;
-    }
-    p,
-    h2,
-    h3 {
-      color: #232536;
-    }
-    .inner-text {
-      color: #6d6e76;
-      max-width: 500px;
-    }
-    h2 {
-      max-width: 550px;
-    }
-    h3 {
-      max-width: 500px;
-    }
-    .read-more {
-      font-family: "Sen", sans-serif;
-      font-style: normal;
-      font-size: 18px;
-      line-height: 32px;
-      font-weight: bold;
-      color: #592ea9;
     }
   }
 }
