@@ -216,7 +216,9 @@
       }
     }
     #logo-component {
-      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
     }
     #testimonials {
       min-height: 344px;
@@ -259,9 +261,25 @@
         p {
           color: #6d6e76;
         }
-        .back-button{
+        .back-button {
           margin: 0 30px 0 80px;
         }
+      }
+    }
+    #join {
+      text-align: center;
+      h2 {
+        max-width: 500px;
+        color: #232536;
+        margin: auto;
+      }
+      p {
+        max-width: 400px;
+        color: #6d6e76;
+        margin: 20px auto;
+      }
+      button {
+        background-color: #ffd050;
       }
     }
   }
