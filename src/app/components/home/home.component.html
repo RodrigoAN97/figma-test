@@ -79,4 +79,37 @@
       </p>
     </div>
   </div>
+  <div id="choose-category">
+    <h2>Choose a Category</h2>
+    <div id="categories">
+      <div
+        class="category"
+        *ngFor="let cat of categories"
+        [id]="cat.featured && 'feat-cat'"
+      >
+        <div class="icon">
+          <img
+            alt="icon"
+            [src]="'assets/' + cat.icon"
+            [id]="cat.featured && 'feat'"
+          />
+        </div>
+        <h3>{{ cat.title }}</h3>
+        <p class="body1">{{ cat.text }}</p>
+      </div>
+    </div>
+  </div>
+  <div id="special-post">
+    <img alt="post" src="assets/special-post.svg" />
+    <div id="post-content">
+      <p class="cap1">Why we started</p>
+      <h1>It started out as a simple idea and evolved into our passion</h1>
+      <p class="body1" class="inner-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+      </p>
+      <button>Discover our story ></button>
+    </div>
+  </div>
 </div>

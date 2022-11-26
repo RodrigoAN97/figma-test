@@ -37,4 +37,30 @@ export class HomeComponent {
       title: '8 Figma design systems that you can download for free today.',
     },
   ];
+  categories = [
+    {
+      icon: 'business.svg',
+      title: 'Business',
+      text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
+      featured: false
+    },
+    {
+      icon: 'startup.svg',
+      title: 'Startup',
+      text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
+      featured: true
+    },
+    {
+      icon: 'economy.svg',
+      title: 'Economy',
+      text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
+      featured: false
+    },
+    {
+      icon: 'technology.svg',
+      title: 'Technology',
+      text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
+      featured: false
+    },
+  ];
 }
