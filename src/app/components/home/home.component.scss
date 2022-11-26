@@ -7,13 +7,6 @@
     color: #ffffff;
     #hero-info {
       padding: 105px 60px;
-      #upper {
-        font-family: "Sen", sans-serif;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 20px;
-        text-transform: uppercase;
-      }
       h1 {
         max-width: 850px;
       }
@@ -72,6 +65,50 @@
       }
     }
     #view-all {
+      color: #592ea9;
+    }
+  }
+  #about-mission {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f4f0f8;
+    position: relative;
+    #yellow-pattern {
+      position: absolute;
+      background: #ffd050;
+      height: 23px;
+      width: 60%;
+      top: -23px;
+    }
+    #purple-pattern {
+      position: absolute;
+      background: #592ea9;
+      height: 23px;
+      width: 20%;
+      top: -23px;
+      right: 0;
+    }
+    p,
+    h2,
+    h3 {
+      color: #232536;
+    }
+    .inner-text {
+      color: #6d6e76;
+      max-width: 500px;
+    }
+    h2 {
+      max-width: 550px;
+    }
+    h3 {
+      max-width: 500px;
+    }
+    .read-more {
+      font-family: "Sen", sans-serif;
+      font-style: normal;
+      font-size: 18px;
+      line-height: 32px;
+      font-weight: bold;
       color: #592ea9;
     }
   }
